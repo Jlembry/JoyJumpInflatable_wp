@@ -18,6 +18,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 #home {
     min-height: calc(100vh - var(--nav-height));
     height: calc(100vh - var(--nav-height));
@@ -163,7 +165,9 @@ section:not(#home) {
 .image-container {
     flex: 1;
     overflow: hidden;
-    position: relative;
+    position: relative;    
+    border-right: 10px solid #333; /* Matches navbar color */
+    border-left: 10px solid #333;
 }
 
 .home-image {
@@ -185,6 +189,10 @@ section:not(#home) {
     background: rgba(31, 31, 82, 0.3); /* Blue tint overlay */
     pointer-events: none; /* Ensure the overlay doesn't block interactions */
     z-index: 1; /* Place above the background image */
+    /*border-left: 10px solid #333;
+    border-right: 10px solid #333;
+    border-bottom-style: none;
+    border-top-style: none;*/
 }
 
 .image-content {
